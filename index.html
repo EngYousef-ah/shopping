@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+</head>
+
+
+<body class="vh-100 overflow-hiiden bg-dark ">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent ">
+        <div class="container bg-dark">
+            <!--Logo-->
+            <a class="navbar-brand" href="#home">
+                <h2>TechnoStuff</h2>
+            </a>
+            <!--Toggle Btn-->
+            <button class="navbar-toggler shadow-none border-0 " type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--SideBar-->
+            <div class="sidebar offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header text-white border-bottom ">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">TechnoStuff</h5>
+                    <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+
+                <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+                    <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#categories">Categories</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#cart">Cart</a>
+                        </li>
+
+
+
+                    </ul>
+                    <!-- Login / Sign Up-->
+                    <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+                        <a href="Login.html" class="text-white">Login</a>
+                        <a href="#signup" class="text-white text-decoration-none px-3 py-1  rounded-4"
+                            style="background-color: #f94ca4;">Sign Up</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active c-item">
+                <img src="images/Laptops.jpg" class="d-block w-100 c-img" alt="Slide 1">
+                <!--
+                <div class="carousel-caption top-0 mt-4">
+                    <p class="mt-5 fs-3 text-uppercase">Discover the hidden world</p>
+                    <h1 class="display-1 fw-bolder text-capitalize">The Aurora Tours</h1>
+                    <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Book a tour</button>
+                </div>
+                -->
+            </div>
+            <div class="carousel-item c-item">
+                <img src="images/MacBoo Pro 13 M1.jpg" class="d-block w-100 c-img" alt="Slide 2">
+                <!--
+                <div class="carousel-caption top-0 mt-4">
+                    <p class="text-uppercase fs-3 mt-5">The season has arrived</p>
+                    <p class="display-1 fw-bolder text-capitalize">3 available tours</p>
+                    <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                        data-bs-target="#booking-modal">Book a tour</button>
+                </div>
+                -->
+            </div>
+            <div class="carousel-item c-item">
+                <img src="images/landing page image.jpeg" class="d-block w-100 c-img" alt="Slide 3">
+                <!--
+                <div class="carousel-caption top-0 mt-4">
+                    <p class="text-uppercase fs-3 mt-5">Destination activities</p>
+                    <p class="display-1 fw-bolder text-capitalize">Go glacier hiking</p>
+                    <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                        data-bs-target="#booking-modal">Book a tour</button>
+                </div>
+                -->
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container py-5">
+        <h1 class="text-center" style="color: rgb(246, 226, 190);">products</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+
+            <div class="col">
+                <div class="card">
+                    <img src="images/MacBoo Pro 13 M1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">MacBook Pro 13 M1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                            dignissimos accusantium amet similique velit iste.</p>
+                    </div>
+                    <div class="mb-5 d-flex justify-content-around">
+                        <h3>1300$</h3>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/MacBoo Pro 13 M1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">MacBook Pro 13 M1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                            dignissimos accusantium amet similique velit iste.</p>
+                    </div>
+                    <div class="mb-5 d-flex justify-content-around">
+                        <h3>1300$</h3>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/MacBoo Pro 13 M1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">MacBook Pro 13 M1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                            dignissimos accusantium amet similique velit iste.</p>
+                    </div>
+                    <div class="mb-5 d-flex justify-content-around">
+                        <h3>1300$</h3>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/MacBoo Pro 13 M1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">MacBook Pro 13 M1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                            dignissimos accusantium amet similique velit iste.</p>
+                    </div>
+                    <div class="mb-5 d-flex justify-content-around">
+                        <h3>1300$</h3>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/MacBoo Pro 13 M1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">MacBook Pro 13 M1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                            dignissimos accusantium amet similique velit iste.</p>
+                    </div>
+                    <div class="mb-5 d-flex justify-content-around">
+                        <h3>1300$</h3>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/MacBoo Pro 13 M1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">MacBook Pro 13 M1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                            dignissimos accusantium amet similique velit iste.</p>
+                    </div>
+                    <div class="mb-5 d-flex justify-content-around">
+                        <h3>1300$</h3>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/MacBoo Pro 13 M1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">MacBook Pro 13 M1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                            dignissimos accusantium amet similique velit iste.</p>
+                    </div>
+                    <div class="mb-5 d-flex justify-content-around">
+                        <h3>1300$</h3>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!--
+        
+        
+       
+
+        <div class="card" style="width: 15rem;">
+            <img class="card-img-top" src="images/milkyway-8190232_1920.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title">MacBook Air</h4>
+                <p class="card-text">M2, 2023, 15inch, 16ram, 256rom</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">1100$</li>
+
+            </ul>
+            <div class="card-body">
+
+                <a href="#" class="card-link">Add to cart</a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+ -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
